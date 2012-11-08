@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>test</title>
+<style>
+#container{
+  width: 256px;
+}
+#container .wrap{
+  width: 256px;
+  height: 256px;
+  overflow: hidden;
+  position: relative;
+}
+#container .wrap img{
+  position: relative;
+}
+#container .wrap span.comment{
+  background-color: yellow;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #000000;
+  padding: 2px;
+  display: none;
+}
+#container .wrap:hover span.comment{
+  display: block;
+}
+#container .wrap:hover span.comment a{
+  text-decoration: none;
+  color: #ffffff;
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <div class="wrap">
+       <img src ="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png">
+       <span class="comment">
+          <a href="http://www.google.com" id="A1" >Edit Picture </a>
+       </span>
+   </div>
+</div>
+</body>
+</html>
